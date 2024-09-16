@@ -1,0 +1,50 @@
+$default-font-color: #000;
+$background-color: #4a90e2;
+$container-bgcolor: #f2f2f2;
+$container-bordercolerr: #000;
+$text-border-color: lightgray;
+$button-text-color: #fff;
+$button-hover-color: #000;
+$add-button-color: #4caf50;
+$clear-button-color: #f44336;
+
+
+@mixin mp($size) {
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: $default-font-color;
+    background-color: $background-color;
+    width: 100%;
+    min-height: 100%;
+
+    @include mp(768px) {
+        font-size: 22px;
+    }
+}
+
+body {
+    padding: 20px;
+    background-color: $background-color;
+}
+
+section {
+    background-color: $container-bgcolor;
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    border: 1px solid $container-bordercolerr;
+    border-radius: 10px;
+}
