@@ -23,31 +23,30 @@
         }
     }
 
-    .listItems {
+    .item {
         display: flex;
         justify-content: flex-start;
-        flex-direction: column;
-        align-items: baseline;
+        // flex-direction: center;
+        align-items: center;
         padding-top: 1rem;
 
-        .item {
-            input[type="checkbox"] {
-                text-align: center;
-                width: 2.5rem;
-                min-width: 48px;
-                height: 2.5rem;
-                min-height: 48px;
-                cursor: pointer;
-                margin-right: 1.5rem;
-            }
 
-            input[type="checkbox"]:focus+label {
-                text-decoration: underline;
-            }
+        input[type="checkbox"] {
+            text-align: center;
+            width: 2.5rem;
+            min-width: 48px;
+            height: 2.5rem;
+            min-height: 48px;
+            cursor: pointer;
+            margin-right: 1.5rem;
+        }
 
-            label {
-                font-size: 1.2rem;
-            }
+        input[type="checkbox"]:focus+label {
+            text-decoration: underline;
+        }
+
+        label {
+            font-size: 1.2rem;
         }
 
 
