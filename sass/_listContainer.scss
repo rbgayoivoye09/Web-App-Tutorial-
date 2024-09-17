@@ -13,7 +13,7 @@
             background-color: $clear-button-color ;
             margin-bottom: 0.5rem;
 
-            @include mp(768px) {
+            @include mq(768px) {
                 padding: 0 0.5rem;
             }
         }
@@ -26,7 +26,6 @@
     .item {
         display: flex;
         justify-content: flex-start;
-        // flex-direction: center;
         align-items: center;
         padding-top: 1rem;
 
@@ -48,9 +47,11 @@
         label {
             font-size: 1.2rem;
         }
+    }
 
-
-
+    .conmfirmation {
+        position: absolute;
+        left: -1000000px;
     }
 
 }

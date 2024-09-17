@@ -33,7 +33,7 @@
             background-color: $add-button-color;
             padding: 0.75rem;
 
-            @include mp(768px) {
+            @include mq(768px) {
                 font-size: 22px;
             }
         }
